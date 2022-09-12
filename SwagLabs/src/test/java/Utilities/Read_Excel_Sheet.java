@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class Read_Excel_Sheet {
     public Object[][] read_sheet() throws IOException, InvalidFormatException {
-        File my_file = new File(".//test_data//Employees.xlsx");
+        File my_file = new File(".//test_data//TestData.xlsx");
         XSSFWorkbook wb = new XSSFWorkbook(my_file);
         XSSFSheet my_sheet = wb.getSheet("sheet1");
         int num_of_rows = my_sheet.getPhysicalNumberOfRows();
