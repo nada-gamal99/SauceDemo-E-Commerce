@@ -8,9 +8,9 @@ public class Login_Page extends Base_Page{
     public Login_Page(WebDriver driver) {
         super(driver);
     }
-    public By user_name = By.id("user-name");
-    public By password = By.id("password");
-    public By login_button = By.id("login-button");
+    private By user_name = By.id("user-name");
+    private By password = By.id("password");
+    private By login_button = By.id("login-button");
 
     public void enter_user_name(String name){
         base_page_driver.findElement(user_name).sendKeys(name);
