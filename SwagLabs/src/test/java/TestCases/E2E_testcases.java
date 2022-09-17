@@ -46,6 +46,8 @@ public class E2E_testcases extends Base_Test {
         Thread.sleep(3000);
         logout.click_on_logout_button();
         Thread.sleep(3000);
+        String check = base_test_driver.findElement(By.xpath("/html/body/div/div/div[2]/div[2]/div/div[1]/h4")).getText();
+        Assert.assertEquals(check,"Accepted usernames are:");
 
 
     }
